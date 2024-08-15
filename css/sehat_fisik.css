@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+:root{
+    --birdong: #2A1A5E;
+    --orenterang: #F45905;
+    --orenpastel: #FB9224;
+    --kuning: #FBE555;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #E0FBE2;
+    background-size:cover;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    align-items:center;
+    padding:0px 40px;
+}
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    margin-left: -100px;
+    transition: 0.5s ease;
+}
+
+header .plant {
+    color: #FB9224;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigation {
+    position: relative;
+}
+
+header .navigation .navigation-items a {
+    position: relative;
+    color: #2A1A5E;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+    content: '';
+    position: absolute;
+    background: #FB9224;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover,
+header .navigation .navigation-items a:hover:before {
+    color: #FB9224;
+}
+
+header .navigation .navigation-items a:hover:before {
+    background: #FB9224;
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    filter: blur(50%);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    filter: blur(30%);
+    color: #FB9224;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+/************heading**************/
+.heading{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:65px;
+    align-items:center;
+    margin-top: 80px;
+    background-image: url(../img/bg_gizi.png);
+}
+.right {
+    width: 440px;
+    height: 440px;
+    margin-top: -50px;
+    background-image: url('../img/img_sehatfisik/sehat_fisik.png');
+    background-size: cover;
+    border-radius: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: zoomIn 5s infinite;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/**********left************/
+.left p:nth-child(1){
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-style: italic;
+    margin-top: -80px;
+}
+.left h2{
+    font-size: 70px;
+    color:rgb(0, 0, 0);
+}
+.left p:nth-child(3){
+    color:  #4f6738;
+    font-size: 25px;
+    font-style: italic;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .heading {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .left h2 {
+        font-size: 40px;
+    }
+
+    .left p:nth-child(1),
+    .left p:nth-child(3) {
+        font-size: 18px;
+    }
+
+    .right {
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    header .navigation .navigation-items a {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    .dropdown-content {
+        min-width: 150px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .right {
+        width: 300px; /* Fixed width */
+        height: 300px; /* Fixed height */
+    }
+
+    .left h2 {
+        font-size: 30px;
+    }
+
+    .left p:nth-child(1),
+    .left p:nth-child(3) {
+        font-size: 16px;
+    }
+
+    header .navigation .navigation-items a {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .dropdown-content {
+        min-width: 120px;
+    }
+}
