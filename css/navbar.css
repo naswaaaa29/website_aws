@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+:root{
+    --birdong: #2A1A5E;
+    --orenterang: #F45905;
+    --orenpastel: #FB9224;
+    --kuning: #FBE555;
+}
+.plant {
+    color: #FB9224;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-link{
+    position: relative;
+    color: #2A1A5E;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.nav-link:before {
+    content: '';
+    position: absolute;
+    background: #FB9224;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+.nav-link:hover,.nav-link:hover:before {
+    color: #FB9224;
+}
+
+.nav-link:hover:before {
+    background: #FB9224;
+    width: 100%;
+}
+
+.dropdown-menu {
+    filter: blur(50%);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-item:hover{
+    background-color: transparent;
+}
+
+.dropdown-menu a:hover {
+    filter: blur(30%);
+    color: #FB9224;
+}
+.dropdown-menu{
+    border: none;
+    background-color: transparent;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+nav{
+    z-index: 1000;
+}
