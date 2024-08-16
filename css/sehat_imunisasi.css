@@ -8,8 +8,11 @@
     --orenterang: #F45905;
     --orenpastel: #FB9224;
     --kuning: #FBE555;
+    --biru: #1B2735;
+    --biruterang: #5B99C2;
 }
 body{
+    margin: 0;
     width: 100%;
     height: 100%;
     background-color: #E0FBE2;
@@ -119,9 +122,9 @@ section {
 .heading{
     display: flex;
     justify-content: space-evenly;
-    padding-top:65px;
-    align-items:center;
-    margin-top: 80px;
+    padding-top: 50px;
+    align-items: center;
+    margin-top: -50px;
     background-image: url(../img/bg_gizi.png);
 }
 .right {
@@ -229,5 +232,231 @@ section {
 
     .dropdown-content {
         min-width: 120px;
+    }
+}
+
+.container{
+    height:100vh;
+    overflow-x: hidden;
+    perspective: 20px;
+}
+.parallax{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.bg{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-image: url(hospital.jpeg);
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(-10px) scale(1.);
+}
+.content{
+    color:#fff;
+    font-size: xxx-large;
+    transform: translateZ(10px);
+}
+.static{
+    height:120vh;
+    background-image: linear-gradient(
+        to bottom,
+        transparent,
+        #1B2735 40px
+    );
+    transform: translateY(-50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+}
+.static-image img {
+    width: 500px;
+    padding: 20px;
+    margin-left: 50px;
+}
+.static-text {
+    display: block;
+}
+.static p, h4 {
+    font-size: 20px;
+    padding: 10px;
+    text-align: justify;
+    margin-right: 50px;
+}
+.rock1{
+    position: absolute;
+    width:150px;
+    transform: translateZ(17px)
+        translateX(-50px) translateY(80px)
+    ;
+}
+.rock2{
+    position: absolute;
+    width:300px;
+    transform: translateZ(5px)
+        translateX(50px) translateY(-30px)
+    ;
+}
+.rock3{
+    position: absolute;
+    width:100px;
+    transform: translateZ(10px)
+        translateX(-250px) translateY(-50px)
+    ;
+}
+.rock4{
+    position: absolute;
+    width:200px;
+    transform: translateZ(2px)
+        translateX(300px) translateY(-100px)
+    ;
+}
+.rock5{
+    position: absolute;
+    width:300px;
+    transform: translateZ(6px)
+        translateX(400px) translateY(200px)
+    ;
+}
+
+.astronomi {
+    background: #E0FBE2;
+    padding: 1rem 10%;
+}
+
+.astronomi h2{
+    color: var(--birdong);
+    font-size: 2.3rem;
+    margin-top: 50px;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.astronomi-card1, .astronomi-card2 {
+    display: flex;
+    align-items: center;
+    color: var(--birdong);
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap; /* Untuk memastikan card tetap rapi jika ruang tidak cukup */
+}
+
+.card {
+    padding: 1rem;
+    border: 2px solid var(--biruterang);
+    text-align: center;
+    border-radius: 25px;
+    display: block;
+    transition: all .4s ease;
+    z-index: 999;
+    flex: 1 1 calc(25% - 1rem); /* Mengatur lebar card agar sesuai dengan ukuran layar */
+    box-sizing: border-box;
+    max-width: 250px;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+.card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-top: -4rem;
+    filter: drop-shadow(0 0 0.5rem #5B99C2);
+}
+
+.card .price-name {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    padding-bottom: .5rem;
+}
+
+.info p {
+    padding: .5rem 0 1.5rem 0;
+}
+
+.info .btn {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: .5rem 0.8rem;
+    font-size: 1rem;
+}
+
+.btn {
+    background: var(--biru);
+    color: #F4F4F4;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid var(--biruterang);
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    box-shadow: 0 0 1rem var(--biruterang);
+    background: var(--biruterang);
+    color: black;
+}
+
+/* Responsive untuk mobile */
+@media only screen and (max-width: 768px) {
+    .astronomi {
+        padding: 2rem 5%;
+    }
+
+    .astronomi h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 1rem); /* Ukuran card di mobile akan 50% lebar layar */
+        max-width: 100%;
+    }
+
+    .astronomi-card4 {
+        margin-left: 0; /* Reset margin untuk mobile */
+        justify-content: center;
+    }
+
+    .btn {
+        width: 90%; /* Lebih lebar agar teks tetap di satu baris */
+        padding: .5rem 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; /* Ukuran card akan 100% lebar layar di layar yang lebih kecil */
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .card img {
+        width: 90px;
+        height: 90px;
     }
 }
