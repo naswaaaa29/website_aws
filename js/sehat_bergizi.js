@@ -21,3 +21,25 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(image);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in");
+                observer.unobserve(entry.target); // Stop observing once the element is visible
+            }
+        });
+    }, observerOptions);
+
+    // Select both the heading and the cards
+    const elementsToAnimate = document.querySelectorAll(".card, .astronomi h2");
+    
+    elementsToAnimate.forEach(element => {
+        observer.observe(element);
+    });
+});
