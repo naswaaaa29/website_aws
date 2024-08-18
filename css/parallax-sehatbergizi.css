@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    /* color */
+    --hijautua: #1A5319;
+    --hijausedang: #508D4E;
+    --hijaumuda: #80AF81;
+
+    --item1-transform: translateX(-100%) translateY(-5%) scale(1.5);
+    --item1-filter: blur(30px);
+    --item1-zIndex: 11;
+    --item1-opacity: 0;
+
+    --item2-transform: translateX(0);
+    --item2-filter: blur(0px);
+    --item2-zIndex: 10;
+    --item2-opacity: 1;
+
+    --item3-transform: translate(50%,10%) scale(0.8);
+    --item3-filter: blur(10px);
+    --item3-zIndex: 9;
+    --item3-opacity: 1;
+
+    --item4-transform: translate(90%,20%) scale(0.5);
+    --item4-filter: blur(30px);
+    --item4-zIndex: 8;
+    --item4-opacity: 1;
+    
+    --item5-transform: translate(120%,30%) scale(0.3);
+    --item5-filter: blur(40px);
+    --item5-zIndex: 7;
+    --item5-opacity: 0;
+}
+
+::-webkit-scrollbar {
+    height: .1rem;
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--hijaumuda);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--hijautua);
+    border-radius: 5rem;
+}
+
+body{
+    color: #fff;
+    overflow-x: hidden;
+    margin :0;
+}
+
+header {
+    padding: 25px 10%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1001;
+} 
+
+.logo {
+    font-size: 2rem;
+    color: #12f7ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+ul.navlist {
+    display: flex;
+    align-items: center;
+}
+
+.navlist li {
+    margin-left: 1rem;
+}
+
+.navlist li a {
+    color: #8D493A;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px 12px;
+    border: 2px solid #A2CA71;
+    border-radius: 25px;
+    transition: all .3s ease;
+}
+
+.navlist li a:hover,
+.navlist li a.active {
+    box-shadow: 0 0 1rem var(--hijautua);
+    background: #A2CA71;
+    color: #1d002c;
+}
+
+section {
+    min-height: 100vh;
+} 
+
+.container{
+    height:100vh;
+    overflow-x: hidden;
+    perspective: 20px;
+}
+
+.parallax{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.bg{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-image: url('../img/Parallax-limasehat/fruit.jpeg');
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(-10px) scale(1.);
+}
+
+.content{
+    color:#fff;
+    font-size: xxx-large;
+    transform: translateZ(10px);
+}
+
+.static{
+    height:100vh;
+    background-image: linear-gradient(
+        to bottom,
+        transparent,
+        #001008 50px
+    );
+    transform: translateY(-50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size: xxx-large;
+}
+
+.elemen1{
+    position: absolute;
+    width:150px;
+    transform: translateZ(17px)
+        translateX(-50px) translateY(80px)
+    ;
+}
+
+.elemen2{
+    position: absolute;
+    width:300px;
+    transform: translateZ(5px)
+        translateX(50px) translateY(-30px)
+    ;
+}
+
+.elemen3{
+    position: absolute;
+    width:100px;
+    transform: translateZ(10px)
+        translateX(-300px) translateY(10px)
+    ;
+}
+
+.elemen4{
+    position: absolute;
+    width:200px;
+    transform: translateZ(2px)
+        translateX(300px) translateY(-100px)
+    ;
+}
+
+.elemen5{
+    position: absolute;
+    width:300px;
+    transform: translateZ(6px)
+        translateX(400px) translateY(200px)
+    ;
+}
