@@ -3,6 +3,7 @@ let hand = document.getElementById("hand");
 let text = document.getElementById("text");
 let p2 = document.getElementById('p2');
 let p3 = document.getElementById('p3');
+var bottomPx;
 
 function updateBottomPosition() {
     var lebarLayar = window.innerWidth;
@@ -13,14 +14,14 @@ function updateBottomPosition() {
     if (lebarLayar <= 500) {
         bottomPercentage = 50; // Jika lebar layar <= 500px, bottom 50%
     }else if(tinggiLayar <= 700){
-        bottomPercentage = -20+ (60 - 10) * (1700 - lebarLayar) / (1700 - 600);
+        bottomPercentage = -10+ (60 - 10) * (1700 - lebarLayar) / (1700 - 600);
     } else {
         // Menghitung bottom secara proporsional antara 10% dan 50% berdasarkan lebar layar
         bottomPercentage = 0+ (60 - 10) * (1700 - lebarLayar) / (1700 - 600);
     }
 
     // Menyesuaikan posisi bottom berdasarkan tinggi layar juga
-    var bottomPx = (bottomPercentage / 100) * tinggiLayar-100;
+    bottomPx = (bottomPercentage / 100) * tinggiLayar-100;
     console.log(bottomPx);
     // Mengatur properti CSS bottom dari elemen yang diinginkan
     moon.style.bottom = bottomPx + 'px';
@@ -37,7 +38,7 @@ window.addEventListener('resize', updateBottomPosition);
 // Function to handle parallax effects and hide/show parallax-home
 window.addEventListener("scroll", () => {
     let value = window.scrollY;
-    let tinggiLayarhand = window.innerHeight * 0.1;
+    let tinggiLayarhand = window.innerHeight * (bottomPx / window.innerHeight);
     console.log("layar:"+tinggiLayarhand);
     console.log("moon : "+ moon.style.bottom);
     
