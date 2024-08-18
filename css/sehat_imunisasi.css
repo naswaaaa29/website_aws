@@ -117,7 +117,7 @@ section {
     padding: 100px 200px;
 }
 
-/************heading**************/
+/*heading*/
 .heading{
     display: flex;
     justify-content: space-evenly;
@@ -151,7 +151,7 @@ section {
     }
 }
 
-/**********left************/
+/*left*/
 .left p:nth-child(1){
     color: rgb(0, 0, 0);
     font-size: 30px;
@@ -169,7 +169,6 @@ section {
     font-style: italic;
 }
 
-/************heading 1**************/
 .heading1{
     display: flex;
     justify-content: space-evenly;
@@ -298,6 +297,7 @@ section {
 .card {
     padding: 1rem;
     border: 2px solid var(--orenterang);
+    border: 2px solid var(--ungutua);
     text-align: center;
     border-radius: 25px;
     display: block;
@@ -667,7 +667,6 @@ section {
     animation: slideIn 0.7s ease-out forwards; /* Durasi animasi lebih lama */
 }
 
-/*start subjects*/
 :root {
     --primary-color: #3498db; /* Example color */
     --secondary: #f4f4f4; /* Example color */
@@ -773,4 +772,3 @@ section {
         transform: translateY(-10px) rotateY(8deg) scale(1.08); /* Return to final state */
     }
 }
-/*end subjects*/

@@ -58,7 +58,7 @@ document.addEventListener("scroll", function () {
 });
 
 
-// card 
+// lima-sehat 
 let nextButton = document.getElementById('next');
 let prevButton = document.getElementById('prev');
 let carousel = document.querySelector('.carousel');
