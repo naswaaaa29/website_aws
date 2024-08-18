@@ -122,7 +122,7 @@ section {
     padding-top:65px;
     align-items:center;
     margin-top: 80px;
-    background-image: url(../img/img_sehatbergizi/bg_buah.png);
+    background-image: url(../img/bg_5s/1.png);
 }
 .right {
     width: 440px;
@@ -200,25 +200,6 @@ section {
         transform: scale(1);
     }
 }
-
-/**********left 1************/
-.left1 p:nth-child(1){
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    letter-spacing: 1px;
-    font-style: italic;
-    margin-top: -80px;
-}
-.left1 h2{
-    font-size: 70px;
-    color:rgb(0, 0, 0);
-}
-.left1 p:nth-child(3){
-    color:  #4f6738;
-    font-size: 25px;
-    font-style: italic;
-}
-
 
 /* responsive */
 @media (max-width: 768px) {
