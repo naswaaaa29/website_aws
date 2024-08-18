@@ -60,7 +60,9 @@ body {
     color: #fff;
     overflow-x: hidden;
 }
- 
+.container-fluid{
+    --bs-gutter-x: 0;
+}
 header {
     padding: 25px 10%;
     position: absolute;
@@ -134,7 +136,7 @@ section {
 
 .parallax-home #text {
     position: absolute;
-    top: 250px;
+    
     font-size: 4em;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
@@ -146,11 +148,17 @@ section {
 }
 
 .parallax-home img#moon {
-    width: 95%;
+    width: 90%;
+   
 }
 
 .parallax-home img#p2, .parallax-home img#p3 {
     width: 100%;
+}
+#hand {
+    max-width: 90%; 
+    width: 90vw; 
+    height: auto;
 }
 
 /* selesai home */
@@ -459,6 +467,23 @@ section {
 /* next click */
 .carousel.next .item:nth-child(1){
     animation: transformFromPosition2 0.5s ease-in-out 1 forwards;
+}
+@media (max-width: 768px) {
+    #hand {
+        width: 100vw; 
+    }
+    #moon{
+        bottom: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    #hand {
+        width: 100vw; 
+    }
+    #moon{
+        bottom: 50%;
+    }
 }
 
 @keyframes transformFromPosition2{
