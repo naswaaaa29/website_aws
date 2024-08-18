@@ -8,8 +8,15 @@
     --orenterang: #F45905;
     --orenpastel: #FB9224;
     --kuning: #FBE555;
+<<<<<<< HEAD
     --biru: #1B2735;
     --biruterang: #5B99C2;
+=======
+    --primary-color: #3498db; /* Example color */
+    --secondary: #f4f4f4; /* Example color */
+    --hover-gradient: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient color for hover */
+    
+>>>>>>> fcfa6dfa6c1d40b6d432796aeee157e46515db22
 }
 body{
     margin: 0;
@@ -235,6 +242,7 @@ section {
     }
 }
 
+<<<<<<< HEAD
 .container{
     height:100vh;
     overflow-x: hidden;
@@ -328,12 +336,259 @@ section {
 .astronomi {
     background: #E0FBE2;
     padding: 1rem 10%;
+=======
+/* about us */
+.headingya {
+    text-align: center;
+    color: var(--birdong);
+    text-transform: uppercase;
+    font-size: 2.7rem;
+    margin-top: 80px;   
+}
+.aboutku {
+    padding: 5rem 2rem; /* Perbarui padding untuk jarak yang lebih seragam */
+    background-image: url();
+    margin-top: -40px;
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-size: cover; /* Sesuaikan ukuran background image */
+}
+
+.aboutku .row {
+    display: flex;
+    align-items: flex-start; /* Ubah untuk perataan yang lebih rapi */
+    flex-wrap: wrap;
+    gap: 2rem; /* Tambahkan jarak antar elemen */
+}
+
+.aboutku .row .image {
+    flex: 1 1 40%; /* Ubah proporsi flex untuk memberi lebih banyak ruang pada konten */
+}
+
+.aboutku .row .image img {
+    width: 80%; /* Atur lebar gambar menjadi 80% dari elemen container */
+    max-width: 500px; /* Tambahkan batasan lebar maksimal untuk gambar */
+    border-radius: 10px; /* Pertahankan border-radius untuk tampilan yang rapi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Pertahankan efek bayangan */
+    display: block; /* Pastikan gambar tidak memiliki jarak bawah */
+    margin: 0 auto; /* Pusatkan gambar jika diperlukan */
+    background-color: #02aba3;
+}
+
+.aboutku .row .content {
+    flex: 1 1 50%;
+    padding: 2rem; /* Kurangi padding untuk konten */
+}
+
+.aboutku .row .content h3 {
+    font-size: 2.5rem; /* Kurangi ukuran font untuk heading */
+    color: var(--main-color);
+    margin-bottom: 1rem; /* Tambahkan margin bawah untuk jarak dengan konten */
+}
+
+.aboutku .row .content p {
+    font-size: 1.4rem; /* Kurangi ukuran font untuk paragraf */
+    color: #444;
+    line-height: 1.6; /* Sesuaikan line-height untuk teks yang lebih nyaman dibaca */
+    text-align: justify;
+}
+
+.line {
+    margin-top: 2rem; /* Kurangi margin untuk jarak yang lebih konsisten */
+    margin-bottom: 2rem;
+    width: 100px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+/* heading 2 */
+.aboutku1 {
+    padding: 5rem 2rem; /* Perbarui padding untuk jarak yang lebih seragam */
+    background-image: url();
+    margin-top: -40px;
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-size: cover; /* Sesuaikan ukuran background image */
+}
+
+.aboutku1 .row {
+    display: flex;
+    align-items: center; /* Ubah untuk perataan yang lebih rapi */
+    flex-wrap: wrap;
+    gap: 2rem; /* Tambahkan jarak antar elemen */
+    flex-direction: row-reverse; /* Membalikkan urutan elemen */
+}
+
+.aboutku1 .row .image {
+    flex: 1 1 40%; /* Ubah proporsi flex untuk memberi lebih banyak ruang pada gambar */
+}
+
+.aboutku1 .row .image img {
+    width: 80%; /* Atur lebar gambar menjadi 80% dari elemen container */
+    max-width: 500px; /* Tambahkan batasan lebar maksimal untuk gambar */
+    border-radius: 10px; /* Pertahankan border-radius untuk tampilan yang rapi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Pertahankan efek bayangan */
+    display: block; /* Pastikan gambar tidak memiliki jarak bawah */
+    margin: 0 auto; /* Pusatkan gambar jika diperlukan */
+    background-color: #02aba3;
+}
+
+.aboutku1 .row .content {
+    flex: 1 1 50%;
+    padding: 2rem; /* Kurangi padding untuk konten */
+}
+
+.aboutku1 .row .content h3 {
+    font-size: 2.5rem; /* Kurangi ukuran font untuk heading */
+    color: var(--main-color);
+    margin-bottom: 1rem; /* Tambahkan margin bawah untuk jarak dengan konten */
+}
+
+.aboutku1 .row .content p {
+    font-size: 1.4rem; /* Kurangi ukuran font untuk paragraf */
+    color: #444;
+    line-height: 1.6; /* Sesuaikan line-height untuk teks yang lebih nyaman dibaca */
+    text-align: justify;
+}
+
+/* heading 3 */
+.aboutku2 {
+    padding: 5rem 2rem; /* Perbarui padding untuk jarak yang lebih seragam */
+    background-image: url();
+    margin-top: -40px;
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-size: cover; /* Sesuaikan ukuran background image */
+}
+
+.aboutku2 .row {
+    display: flex;
+    align-items: flex-start; /* Ubah untuk perataan yang lebih rapi */
+    flex-wrap: wrap;
+    gap: 2rem; /* Tambahkan jarak antar elemen */
+}
+
+.aboutku2 .row .image {
+    flex: 1 1 40%; /* Ubah proporsi flex untuk memberi lebih banyak ruang pada konten */
+}
+
+.aboutku2 .row .image img {
+    width: 80%; /* Atur lebar gambar menjadi 80% dari elemen container */
+    max-width: 500px; /* Tambahkan batasan lebar maksimal untuk gambar */
+    border-radius: 10px; /* Pertahankan border-radius untuk tampilan yang rapi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Pertahankan efek bayangan */
+    display: block; /* Pastikan gambar tidak memiliki jarak bawah */
+    margin: 0 auto; /* Pusatkan gambar jika diperlukan */
+    background-color: #02aba3;
+}
+
+.aboutku2 .row .content {
+    flex: 1 1 50%;
+    padding: 2rem; /* Kurangi padding untuk konten */
+}
+
+.aboutku2 .row .content h3 {
+    font-size: 2.5rem; /* Kurangi ukuran font untuk heading */
+    color: var(--main-color);
+    margin-bottom: 1rem; /* Tambahkan margin bawah untuk jarak dengan konten */
+}
+
+.aboutku2 .row .content p {
+    font-size: 1.4rem; /* Kurangi ukuran font untuk paragraf */
+    color: #444;
+    line-height: 1.6; /* Sesuaikan line-height untuk teks yang lebih nyaman dibaca */
+    text-align: justify;
+}
+
+.line {
+    margin-top: 2rem; /* Kurangi margin untuk jarak yang lebih konsisten */
+    margin-bottom: 2rem;
+    width: 100px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .aboutku .row {
+        flex-direction: column; /* Ubah ke kolom untuk tampilan mobile */
+        align-items: center; /* Pusatkan elemen */
+    }
+
+    .aboutku .row .image, 
+    .aboutku .row .content {
+        flex: 1 1 100%;
+        padding: 1rem; /* Kurangi padding pada tampilan mobile */
+    }
+
+    .aboutku .row .content h3 {
+        font-size: 2rem; /* Kurangi ukuran font untuk heading di mobile */
+    }
+
+    .aboutku .row .content p {
+        font-size: 1.2rem; /* Kurangi ukuran font untuk paragraf di mobile */
+    }
+
+    .aboutku2 .row {
+        flex-direction: column; /* Ubah ke kolom untuk tampilan mobile */
+        align-items: center; /* Pusatkan elemen */
+    }
+
+    .aboutku2 .row .image, 
+    .aboutku2 .row .content {
+        flex: 1 1 100%;
+        padding: 1rem; /* Kurangi padding pada tampilan mobile */
+    }
+
+    .aboutku2 .row .content h3 {
+        font-size: 2rem; /* Kurangi ukuran font untuk heading di mobile */
+    }
+
+    .aboutku2 .row .content p {
+        font-size: 1.2rem; /* Kurangi ukuran font untuk paragraf di mobile */
+    }
+}
+
+/* Animation Keyframes */
+@keyframes slideIn {
+    from {
+        transform: translateX(30%); /* Mulai lebih dekat dengan tampilan */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animation to images */
+.aboutku .row .image img, .aboutku1 .row .image img{
+    transform: translateX(30%); 
+    opacity: 0; 
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out; 
+}
+
+/* Animation Class */
+.animate {
+    animation: slideIn 0.7s ease-out forwards; /* Durasi animasi lebih lama */
+}
+
+/* astronomi */
+.astronomi {
+    background: #E0FBE2;
+    padding: 3rem 10%;
+>>>>>>> fcfa6dfa6c1d40b6d432796aeee157e46515db22
 }
 
 .astronomi h2{
     color: var(--birdong);
+<<<<<<< HEAD
     font-size: 2.3rem;
     margin-top: 50px;
+=======
+    font-size: 3.3rem;
+    margin-top: -100px;
+>>>>>>> fcfa6dfa6c1d40b6d432796aeee157e46515db22
     padding: 2rem 0 1rem 0;
     text-align: center;
     margin-bottom: 3rem;
@@ -350,7 +605,11 @@ section {
 
 .card {
     padding: 1rem;
+<<<<<<< HEAD
     border: 2px solid var(--biruterang);
+=======
+    border: 2px solid var(--orenterang);
+>>>>>>> fcfa6dfa6c1d40b6d432796aeee157e46515db22
     text-align: center;
     border-radius: 25px;
     display: block;
@@ -371,7 +630,11 @@ section {
     width: 120px;
     height: 120px;
     margin-top: -4rem;
+<<<<<<< HEAD
     filter: drop-shadow(0 0 0.5rem #5B99C2);
+=======
+    filter: drop-shadow(0 0 0.5rem #F45905);
+>>>>>>> fcfa6dfa6c1d40b6d432796aeee157e46515db22
 }
 
 .card .price-name {
@@ -397,19 +660,33 @@ section {
 }
 
 .btn {
+<<<<<<< HEAD
     background: var(--biru);
     color: #F4F4F4;
     text-decoration: none;
     border-radius: 25px;
     border: 2px solid var(--biruterang);
+=======
+    background: var(--orenterang);
+    color: #F4F4F4;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid var(--kuning);
+>>>>>>> fcfa6dfa6c1d40b6d432796aeee157e46515db22
     font-weight: 500;
     transition: all .3s ease;
 }
 
 .btn:hover {
+<<<<<<< HEAD
     box-shadow: 0 0 1rem var(--biruterang);
     background: var(--biruterang);
     color: black;
+=======
+    box-shadow: 0 0 1rem var(--orenterang);
+    background: var(--kuning);
+    color: var(--orenterang);
+>>>>>>> fcfa6dfa6c1d40b6d432796aeee157e46515db22
 }
 
 /* Responsive untuk mobile */
@@ -460,3 +737,109 @@ section {
         height: 90px;
     }
 }
+<<<<<<< HEAD
+=======
+
+/* start subjects */
+.subjects {
+    padding: 2rem 0;
+    margin-top: -80px;
+}
+
+.heading2{
+    position: relative;
+    color: var(--birdong);
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    text-align: center;
+    background: #E0FBE2;
+}
+
+.subjects .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0 1rem;
+}
+
+.subjects .box-container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.subjects .box-container1 .box {
+    padding: 1.5rem;
+    border: 0.2rem solid var(--primary-color);
+    background: var();
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), 
+                box-shadow 0.6s cubic-bezier(0.25, 1, 0.5, 1),
+                background 0.6s ease, 
+                color 0.6s ease;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d; /* Enable 3D effect */
+    perspective: 1000px; /* Adjust perspective for 3D effect */
+    position: relative;
+}
+
+.subjects .box-container1 .box:hover {
+    background: var(--hover-gradient); /* Gradient background on hover */
+    transform: rotateY(8deg) translateY(-10px) scale(1.08); /* More lift, tilt, and scale */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Increase shadow */
+    animation: smoothBounce 0.6s ease-out; /* Add smooth bounce effect */
+}
+
+.subjects .box-container1 .box:hover img {
+    transform: scale(1.15); /* Slight zoom on image */
+}
+
+.subjects .box-container1 .box img {
+    height: 10rem;
+    margin-bottom: 1rem;
+    transition: transform 0.6s ease; /* Smooth transition for image */
+}
+
+.subjects .box-container1 .box h3 {
+    font-size: 1.7rem;
+    color: #444;
+    padding: 0.5rem 0;
+    text-transform: capitalize;
+    transition: color 0.6s ease, transform 0.6s ease;
+}
+
+.subjects .box-container1 .box:hover h3 {
+    color: #fff;
+    transform: rotate(-3deg); /* Slightly less rotation for smoothness */
+}
+
+.subjects .box-container1 .box p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #777;
+    transition: color 0.6s ease, transform 0.6s ease;
+}
+
+.subjects .box-container1 .box:hover p {
+    color: #fff;
+    transform: rotate(3deg); /* Slightly less rotation for smoothness */
+}
+
+/* Keyframes for smooth bounce effect */
+@keyframes smoothBounce {
+    0% {
+        transform: translateY(-10px) rotateY(8deg) scale(1.08);
+    }
+    50% {
+        transform: translateY(-12px) rotateY(8deg) scale(1.12); /* Peak of the bounce */
+    }
+    100% {
+        transform: translateY(-10px) rotateY(8deg) scale(1.08); /* Return to final state */
+    }
+}
+/*end subjects*/
+>>>>>>> fcfa6dfa6c1d40b6d432796aeee157e46515db22

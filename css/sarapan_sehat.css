@@ -2,6 +2,7 @@
 *{
     padding:0;
     margin:0;
+    font-family: 'Poppins', sans-serif;
 }
 :root{
     --birdong: #2A1A5E;
@@ -112,5 +113,157 @@ header .navigation .navigation-items a:hover:before {
 }
 
 section {
-    padding: 100px 200px;
+    background-image: url(../img/img_progsar/bg.png);
+    background-size: cover;
+    padding: 50px 50px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between; /* Memisahkan gambar dan teks dengan jarak */
+    align-items: center; /* Menjaga teks dan gambar sejajar secara vertikal */
+    gap: 2rem; /* Jarak antara gambar dan teks */
+}
+
+.right {
+    width: 500px; /* Sesuaikan lebar gambar */
+    height: 300px; /* Sesuaikan tinggi gambar */
+    background-image: url('../img/img_progsar/11.png');
+    background-size: cover;
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    flex-shrink: 0; /* Mencegah gambar mengecil jika ada keterbatasan ruang */
+    animation: zoomIn 5s infinite;
+}
+
+.right2 {
+    width: 500px; /* Sesuaikan lebar gambar */
+    height: 300px; /* Sesuaikan tinggi gambar */
+    background-image: url('../img/img_progsar/13.png');
+    background-size: cover;
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    flex-shrink: 0; /* Mencegah gambar mengecil jika ada keterbatasan ruang */
+    animation: zoomIn 5s infinite;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* General container styling */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px ;
+    gap: 2rem; /* Add some gap between sections */
+}
+
+/* Section titles */
+.title h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0.5rem 0;
+    color: var(--birdong);
+    align-self: center; /* Ensure h3 is centered */
+}
+
+.title h2 {
+    font-size: 2rem;
+    text-align: left;
+    align-self: flex-start; /* Align h2 to the left */
+    margin: 1rem;
+    color: var(--birdong);
+    margin-bottom: -50px;
+}
+
+.title {
+    margin-top: 0; /* Reset margin to avoid negative spacing */
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center align h3 */
+    text-align: center;
+    width: 100%;
+}
+
+/* Content section styling */
+.content-sarapan, .manfaat {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap; /* Ensure cards wrap nicely on smaller screens */
+    width: 100%;
+}
+
+/* Individual card styling */
+.card {
+    padding: 1rem;
+    border: 2px solid var(--orenterang);
+    text-align: center;
+    border-radius: 25px;
+    flex: 1 1 calc(25% - 2rem); /* Adjust width calculation */
+    max-width: 250px; /* Set a max width for consistency */
+    box-sizing: border-box;
+    transition: transform 0.4s ease;
+    margin: 1rem 0; /* Add vertical margin for spacing between rows */
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+/* Image inside the card */
+.card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-top: -4rem;
+    filter: drop-shadow(0 0 0.5rem #F45905);
+}
+
+/* Title inside the card */
+.card .tittle h3 {
+    font-size: 1.25rem; /* Set a consistent font size for card titles */
+    margin: 0.5rem 0;
+    color: var(--birdong);
+}
+
+/* Information inside the card */
+.info {
+    padding-bottom: 1rem; /* Add more padding for spacing */
+}
+
+.info p {
+    padding: 0.5rem 0 1.5rem 0;
+    color: var(--birdong);
+}
+
+/* Adjust margin for better spacing */
+.content {
+    flex: 1; /* Membuat teks mengisi ruang yang tersisa */
+}
+
+/* Ensure content sections have consistent padding */
+.content p {
+    padding: 1rem;
+    text-align: justify; /* Justify text for better readability */
+    color: var(--birdong);
+}
+
+.content h2{
+    font-size: 2rem;
+    text-align: left;
+    align-self: flex-start; /* Align h2 to the left */
+    margin: 1rem;
+    color: var(--birdong);
+    margin-bottom: -20px;
 }
