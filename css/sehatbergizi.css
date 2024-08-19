@@ -681,7 +681,7 @@ section {
     animation: slideIn 0.7s ease-out forwards; /* Durasi animasi lebih lama */
 }
 
-/*start subjects*/
+/* start subjects */
 :root {
     --primary-color: #3498db; /* Example color */
     --secondary: #f4f4f4; /* Example color */
@@ -788,4 +788,4 @@ section {
         transform: translateY(-10px) rotateY(8deg) scale(1.08); /* Return to final state */
     }
 }
-/*end subjects*/
+/*end subjects/*

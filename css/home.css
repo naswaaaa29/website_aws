@@ -104,7 +104,7 @@ ul.navlist {
 .navlist li a.active {
     box-shadow: 0 0 1rem var(--hijautua);
     background: #A2CA71;
-    color: #1d002c;
+    color: #fff;
 }
 
 section {
@@ -153,6 +153,71 @@ section {
     width: 100%;
 }
 
+.img-1, .img-2, .img-3, .img-4 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    animation: float 4s infinite ease-in-out;
+}
+
+/* CSS untuk elemen-elemen terbang */
+.img-1, .img-2, .img-3, .img-4 {
+    position: absolute;
+    animation: float 10s ease-in-out infinite;
+}
+
+.img-1 {
+    top: 30%;
+    left: -50px;
+    width: 450px;
+    height: 400px;
+    background-image: url('../img/Home-images/1.png'); 
+    background-size: cover;
+}
+
+.img-2 {
+    top: 45%;
+    left: 12%;
+    width: 350px;
+    height: 300px;
+    background-image: url('../img/Home-images/2.png'); 
+    background-size: cover;
+}
+
+.img-3 {
+    bottom: 14%;
+    right: 22%;
+    width: 350px;
+    height: 300px;
+    background-image: url('../img/Home-images/3.png'); 
+    background-size: cover;
+}
+
+.img-4 {
+    bottom: 14%;
+    right: 12%;
+    width: 450px;
+    height: 400px;
+    background-image: url('../img/Home-images/4.png'); 
+    background-size: cover;
+}
+
+/* Animasi melayang */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 /* selesai home */
 
 /* mulai about */
@@ -167,7 +232,8 @@ section {
 .about h2 {
     margin-top: 50px;
     font-size: 50px;
-    margin-left: 350px;
+    font-weight: bold;
+    margin-left: 450px;
 }
 
 .about img {
@@ -250,7 +316,7 @@ section {
     left: 5%;
     width: 150px;
     height: 100px;
-    background-image: url('About-Images/1.png'); 
+    background-image: url('../img/About-Images/1.png'); 
     background-size: cover;
 }
 
@@ -259,7 +325,7 @@ section {
     right: 5%;
     width: 200px;
     height: 120px;
-    background-image: url('About-Images/1.png'); 
+    background-image: url('../img/About-Images/1.png'); 
     background-size: cover;
 }
 
@@ -268,7 +334,7 @@ section {
     left: 15%;
     width: 90px;
     height: 80px;
-    background-image: url('About-Images/1.png'); 
+    background-image: url('../img/About-Images/1.png'); 
     background-size: cover;
 }
 
@@ -277,7 +343,7 @@ section {
     right: 15%;
     width: 200px;
     height: 150px;
-    background-image: url('About-Images/1.png'); 
+    background-image: url('../img/About-Images/1.png'); 
     background-size: cover;
 }
 
@@ -299,7 +365,7 @@ section {
 .carousel{
     background: #F7DCB9;
     position: relative;
-    height: 750px;
+    height: 810px;
     overflow: hidden;
     margin-top: -50px;
 }
@@ -340,9 +406,9 @@ section {
 }
 
 .carousel .list .item img{
-    width: 85%;
+    width: 65%;
     position: absolute;
-    left: 30%;
+    left: 50%;
     top: 50%;
     transform: translateY(-50%);
     transition: right 1.5s;
