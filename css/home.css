@@ -128,6 +128,10 @@ section {
     z-index: 1;
 }
 
+.parallax-home h1 {
+    font-weight: bold;
+}
+
 .parallax-home img {
     position: absolute;
     object-fit: cover;
@@ -259,9 +263,10 @@ section {
 
 .about img#image1 {
     top: 50px;
-    width: 80vh;
+    width: 85vh;
     margin-left: 40px;
     height: auto;
+    border-radius: 10px;
 }
 
 .about .info-box {
@@ -287,15 +292,15 @@ section {
 
 .content .text-box {
     text-align: justify;
-    color: white;
+    color: #A2CA71;
     z-index: 4;
     background: rgba(255, 255, 255, 0.1);
-    filter: blur(0.1);
+    /* filter: blur(1.2); */
     padding: 25px;
-    max-width: 300px;
+    max-width: 450px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    transform: translate(-300px, 100px); /* Memindahkan text-box */
+    transform: translate(-200px, 150px); /* Memindahkan text-box */
 }
 
 .content .text-box h3 {
@@ -339,7 +344,7 @@ section {
 
 .img3 {
     bottom: 15%;
-    left: 15%;
+    left: 10%;
     width: 90px;
     height: 80px;
     background-image: url('../img/About-Images/1.png'); 
@@ -348,7 +353,7 @@ section {
 
 .img4 {
     bottom: 10%;
-    right: 15%;
+    right: 25px;
     width: 200px;
     height: 150px;
     background-image: url('../img/About-Images/1.png'); 
@@ -371,11 +376,11 @@ section {
 
 /* mulai lima-sehat */
 .carousel{
-    background: #F7DCB9;
+    background: #c8f77d;
     position: relative;
-    height: 810px;
+    height: 800px;
     overflow: hidden;
-    margin-top: -50px;
+    margin-top: 0;
 }
 
 .carousel h3 {
@@ -386,7 +391,7 @@ section {
 }
 
 .carousel .list{
-    top: 100px;
+    /* top: 20px; */
     position: absolute;
     width: 1140px;
     max-width: 90%;
@@ -440,13 +445,13 @@ section {
 .carousel .list .item .introduce .title{
     font-size: 2em;
     font-weight: 500;
-    color: #2A1A5E;
+    color: #8D493A;
     line-height: 1em;
 }
 
 .carousel .list .item .introduce .topic{
     font-size: 2.8em;
-    color: #FB9224;
+    color: #fff;
     font-weight: 500;
 }
 
@@ -463,7 +468,7 @@ section {
     /* border-bottom: 1px solid #555; */
     background-color: transparent;
     font-weight: bold;
-    color: #FB9224;
+    color: #8D493A;
     letter-spacing: 3px;
     border-radius: 8px;
     padding: 8px;
@@ -471,13 +476,13 @@ section {
 }
 
 .carousel .list .item .introduce .seeMore:hover{
-    background: #FB9224;
-    color: white;
+    background: #8D493A;
+    color: #c8f77d;
 }
 
 .seeMore a {
     text-decoration: none;
-    color: orange;
+    color: #8D493A;
 }
 
 .seeMore a:hover {

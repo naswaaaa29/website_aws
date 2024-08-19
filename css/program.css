@@ -61,7 +61,7 @@ ul.navlist {
 .navlist li a.active {
     box-shadow: 0 0 1rem var(--hijautua);
     background: #A2CA71;
-    color: #1d002c;
+    color: #fff;
 }
 
 section {
@@ -136,6 +136,7 @@ section {
     text-align: center;
     margin-bottom: 30px;
     width: 80%;
+    color: #8D493A;
 }
 .carousel .list .item .main-content{
     height: 100%;
@@ -146,8 +147,9 @@ section {
     padding: 250px 20px  20px 50px;
 }
 .carousel .list .item .main-content .content h2{
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-family: 'Aboreto';
+    color: #8D493A;
 }
 .carousel .list .item .main-content .content p{
     text-align: justify;
@@ -174,6 +176,7 @@ section {
     left: -10px;
     position: absolute;
     bottom: 90px;
+    margin-left: -200px;
     width: calc(100% - calc(var(--w-image) * var(--calculate)));
     display: grid;
     grid-template-columns: repeat(2, 50px);
@@ -181,7 +184,7 @@ section {
     justify-content: end;
 }
 .arrows button{
-    background-color: #4f8b69;
+    background-color: #A2CA71;
     border: 1px solid var(--border-color);
     color: #fff;
     font-family: monospace;
@@ -193,7 +196,7 @@ section {
     transition: 0.5s;
 }
 .arrows button:hover{
-    background-color: #eee5;
+    background-color: #8D493A;
 }
 .carousel .list .item{
     display: none;
