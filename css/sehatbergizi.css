@@ -8,11 +8,15 @@
     --orenterang: #F45905;
     --orenpastel: #FB9224;
     --kuning: #FBE555;
+    --ungubox: #AC7D88;
+    --ungutua: #85586F;
+    --coksu: #F1E5D1;
+    --ungumuda: #DBB5B5;
 }
 body{
     width: 100%;
     height: 100%;
-    background-color: #FFD19A;
+    background-color: #E2BFB3;
     background-size:cover;
 }
 .top{
@@ -122,7 +126,7 @@ section {
     padding-top:65px;
     align-items:center;
     margin-top: 80px;
-    background-image: url(../img/img_sehatbergizi/bg_buah.png);
+    background-image: url(../img/bg_5s/1.png);
 }
 .right {
     width: 440px;
@@ -166,59 +170,6 @@ section {
     font-size: 25px;
     font-style: italic;
 }
-
-/************heading 1**************/
-.heading1{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top:65px;
-    align-items:center;
-    margin-top: -50px;
-    background-image: url(../img/bg_gizi.png);
-}
-.right1{
-    width: 440px;
-    height: 440px;
-    margin-top: -50px;
-    background-image: url('../img/gizi1.png');
-    background-size: cover;
-    border-radius: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: zoomIn 5s infinite;
-}
-
-@keyframes zoomIn {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-/**********left 1************/
-.left1 p:nth-child(1){
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    letter-spacing: 1px;
-    font-style: italic;
-    margin-top: -80px;
-}
-.left1 h2{
-    font-size: 70px;
-    color:rgb(0, 0, 0);
-}
-.left1 p:nth-child(3){
-    color:  #4f6738;
-    font-size: 25px;
-    font-style: italic;
-}
-
 
 /* responsive */
 @media (max-width: 768px) {
@@ -287,16 +238,22 @@ section {
 
 /* astronomi */
 .astronomi {
-    background: #FFD19A;
-    padding: 3rem 10%;
+    padding: 5.5rem 4% 2rem;
+    margin: 0;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/img_sehatbergizi/bgfull_gizi.png);
 }
-
 .astronomi h2 {
+    z-index: 1;
+    position: relative;
+    padding: 1rem;
     color: var(--birdong);
-    font-size: 2.3rem;
-    margin-top: -100px;
-    padding: 2rem 0 1rem 0;
+    font-size: 3rem;
     text-align: center;
+    margin-top: -90px;
     margin-bottom: 3rem;
     animation: fadeIn 1s ease-in-out;
 }
@@ -311,7 +268,7 @@ section {
 
 .card {
     padding: 1rem;
-    border: 2px solid var(--orenterang);
+    border: 2px solid var(--ungutua);
     text-align: center;
     border-radius: 25px;
     display: block;
@@ -480,7 +437,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Pertahankan efek bayangan */
     display: block; /* Pastikan gambar tidak memiliki jarak bawah */
     margin: 0 auto; /* Pusatkan gambar jika diperlukan */
-    background-color: #feeebe;
+    background-color: var(--coksu);
 }
 
 .aboutku .row .content {
@@ -538,7 +495,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Pertahankan efek bayangan */
     display: block; /* Pastikan gambar tidak memiliki jarak bawah */
     margin: 0 auto; /* Pusatkan gambar jika diperlukan */
-    background-color: #feeebe;
+    background-color: var(--coksu);
 }
 
 .aboutku1 .row .content {
@@ -587,7 +544,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Pertahankan efek bayangan */
     display: block; /* Pastikan gambar tidak memiliki jarak bawah */
     margin: 0 auto; /* Pusatkan gambar jika diperlukan */
-    background-color: #feeebe;
+    background-color: var(--coksu);
 }
 
 .aboutku2 .row .content {
@@ -681,7 +638,7 @@ section {
     animation: slideIn 0.7s ease-out forwards; /* Durasi animasi lebih lama */
 }
 
-/*start subjects*/
+/* start subjects */
 :root {
     --primary-color: #3498db; /* Example color */
     --secondary: #f4f4f4; /* Example color */
@@ -697,11 +654,12 @@ section {
     position: relative;
     color: var(--birdong);
     font-size: 3rem;
+    margin-top: 100px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .4rem;
     text-align: center;
-    background: #FFD19A;
+    background: #E2BFB3;
 }
 
 .subjects .container {
@@ -720,7 +678,7 @@ section {
 
 .subjects .box-container1 .box {
     padding: 1.5rem;
-    border: 0.2rem solid var(--orenterang);
+    border: 0.2rem solid var(--ungutua);
     background: var();
     transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), 
                 box-shadow 0.6s cubic-bezier(0.25, 1, 0.5, 1),
@@ -788,4 +746,4 @@ section {
         transform: translateY(-10px) rotateY(8deg) scale(1.08); /* Return to final state */
     }
 }
-/*end subjects*/
+/*end subjects/*
