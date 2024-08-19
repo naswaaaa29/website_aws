@@ -58,14 +58,13 @@
 }
 .dropdown-menu{
     border: none;
-    background-color: transparent;
 }
-.dropdown:hover .dropdown-menu {
+/* .dropdown:hover .dropdown-menu {
     display: block;
 }
 .dropdown-toggle::after {
     display: none;
-}
+} */
 nav{
     z-index: 1000;
 }

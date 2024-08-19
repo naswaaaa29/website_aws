@@ -60,7 +60,9 @@ body {
     color: #fff;
     overflow-x: hidden;
 }
- 
+.container-fluid{
+    --bs-gutter-x: 0;
+}
 header {
     padding: 25px 10%;
     position: absolute;
@@ -126,6 +128,10 @@ section {
     z-index: 1;
 }
 
+.parallax-home h1 {
+    font-weight: bold;
+}
+
 .parallax-home img {
     position: absolute;
     object-fit: cover;
@@ -134,7 +140,7 @@ section {
 
 .parallax-home #text {
     position: absolute;
-    top: 250px;
+    
     font-size: 4em;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
@@ -146,11 +152,82 @@ section {
 }
 
 .parallax-home img#moon {
-    width: 95%;
+    width: 90%;
+   
 }
 
 .parallax-home img#p2, .parallax-home img#p3 {
     width: 100%;
+}
+#hand {
+    max-width: 90%; 
+    width: 90vw; 
+    height: auto;
+}
+
+.img-1, .img-2, .img-3, .img-4 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    animation: float 4s infinite ease-in-out;
+}
+
+/* CSS untuk elemen-elemen terbang */
+.img-1, .img-2, .img-3, .img-4 {
+    position: absolute;
+    animation: float 10s ease-in-out infinite;
+}
+
+.img-1 {
+    top: 30%;
+    left: -50px;
+    width: 450px;
+    height: 400px;
+    background-image: url('../img/Home-images/1.png'); 
+    background-size: cover;
+}
+
+.img-2 {
+    top: 45%;
+    left: 12%;
+    width: 350px;
+    height: 300px;
+    background-image: url('../img/Home-images/2.png'); 
+    background-size: cover;
+}
+
+.img-3 {
+    bottom: 14%;
+    right: 22%;
+    width: 350px;
+    height: 300px;
+    background-image: url('../img/Home-images/3.png'); 
+    background-size: cover;
+}
+
+.img-4 {
+    bottom: 14%;
+    right: 12%;
+    width: 450px;
+    height: 400px;
+    background-image: url('../img/Home-images/4.png'); 
+    background-size: cover;
+}
+
+/* Animasi melayang */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .img-1, .img-2, .img-3, .img-4 {
@@ -251,9 +328,10 @@ section {
 
 .about img#image1 {
     top: 50px;
-    width: 80vh;
+    width: 85vh;
     margin-left: 40px;
     height: auto;
+    border-radius: 10px;
 }
 
 .about .info-box {
@@ -279,15 +357,15 @@ section {
 
 .content .text-box {
     text-align: justify;
-    color: white;
+    color: #A2CA71;
     z-index: 4;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.568);
+    /* filter: blur(0.2); */
     padding: 25px;
-    max-width: 300px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 450px;
+    border: 1px solid rgba(240, 237, 237, 0.1);
     border-radius: 10px;
-    transform: translate(-300px, 100px); /* Memindahkan text-box */
+    transform: translate(-200px, 150px); /* Memindahkan text-box */
 }
 
 .content .text-box h3 {
@@ -331,7 +409,7 @@ section {
 
 .img3 {
     bottom: 15%;
-    left: 15%;
+    left: 10%;
     width: 90px;
     height: 80px;
     background-image: url('../img/About-Images/1.png'); 
@@ -340,7 +418,7 @@ section {
 
 .img4 {
     bottom: 10%;
-    right: 15%;
+    right: 25px;
     width: 200px;
     height: 150px;
     background-image: url('../img/About-Images/1.png'); 
@@ -363,11 +441,12 @@ section {
 
 /* mulai lima-sehat */
 .carousel{
-    background: #F7DCB9;
+    background: #c8f77d;
     position: relative;
     height: 810px;
+    height: 800px;
     overflow: hidden;
-    margin-top: -50px;
+    margin-top: 0;
 }
 
 .carousel h3 {
@@ -378,7 +457,7 @@ section {
 }
 
 .carousel .list{
-    top: 100px;
+    /* top: 20px; */
     position: absolute;
     width: 1140px;
     max-width: 90%;
@@ -432,13 +511,13 @@ section {
 .carousel .list .item .introduce .title{
     font-size: 2em;
     font-weight: 500;
-    color: #2A1A5E;
+    color: #8D493A;
     line-height: 1em;
 }
 
 .carousel .list .item .introduce .topic{
     font-size: 2.8em;
-    color: #FB9224;
+    color: #fff;
     font-weight: 500;
 }
 
@@ -455,7 +534,7 @@ section {
     /* border-bottom: 1px solid #555; */
     background-color: transparent;
     font-weight: bold;
-    color: #FB9224;
+    color: #8D493A;
     letter-spacing: 3px;
     border-radius: 8px;
     padding: 8px;
@@ -463,13 +542,13 @@ section {
 }
 
 .carousel .list .item .introduce .seeMore:hover{
-    background: #FB9224;
-    color: white;
+    background: #8D493A;
+    color: #c8f77d;
 }
 
 .seeMore a {
     text-decoration: none;
-    color: orange;
+    color: #8D493A;
 }
 
 .seeMore a:hover {
@@ -526,6 +605,7 @@ section {
 .carousel.next .item:nth-child(1){
     animation: transformFromPosition2 0.5s ease-in-out 1 forwards;
 }
+
 
 @keyframes transformFromPosition2{
     from{
@@ -682,6 +762,23 @@ section {
     
     .carousel .list .item img{
         width: 40%;
+        left : 50%;
+    }
+    #hand {
+        width: 100vw; 
+    }
+    #moon{
+        bottom: 30%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #hand {
+        width: 100vw; 
+    }
+    #moon{
+        bottom: 50%;
     }
 }
 /* selesai lima-sehat */
