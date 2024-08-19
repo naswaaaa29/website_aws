@@ -691,7 +691,8 @@ section div img{
     }
     .img-1 {
       scale: 0.7;
-      
+      left: -5%;
+      bottom: 60%;
     }
     
     .img-2 {
@@ -717,8 +718,13 @@ section div img{
     .content .text-box{
         transform: translate(-150px, 140px)
     }
-   
-   
+    .img1,.img2,.img3,.img4{
+        scale: 0.7;
+    }
+    .about h2 {
+        font-size: 40px;
+        font-weight: bold;
+    }
   
 }
 
@@ -775,12 +781,25 @@ section div img{
         font-size: 0.5em;
     }
     .content .text-box{
-        transform: translate(-100px, 50px)
+        transform: translate(-90px, 30px)
+    }
+    .img1,.img3{
+        left: 0%;
+    }
+    .img2,.img4{
+        right: 0%;
+    }
+    .img1,.img2,.img3,.img4{
+        scale: 0.6;
+    }
+    .about h2 {
+        font-size: 30px;
+        font-weight: bold;
     }
 }
 
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     #hand {
         width: 100vw; 
     }
@@ -789,7 +808,8 @@ section div img{
     }
     .img-1 {
         scale: 0.5;
-        
+        left: -5%;
+        bottom: 60%;
       }
       
       .img-2 {
@@ -803,6 +823,8 @@ section div img{
       
       .img-4 {
          scale: 0.5;
+         right: 10%;
+         bottom: 40%;
           
       }
     .content .text-box h3 {
@@ -814,8 +836,32 @@ section div img{
     }
     .content .text-box{
         padding:10px;
-        transform: translate(-70px, 50px)
+        transform: translate(-70px, 30px)
+        scale(0.7)
+        
+    }
+    .img1,.img2,.img3,.img4{
+        scale: 0.5;
+        
+    }
+
+    .about h2 {
+        font-size: 20px;
+        font-weight: bold;
     }
     
+}
+@media screen and (max-width: 350px) {
+    .content .text-box h3 {
+        font-size: 0.5em;
+        margin-bottom: 3px;
+    }
+    .content .text-box p{
+        font-size: 0.4em;
+    }
+    .content .text-box{
+        padding:5px;
+        transform: translate(-50px, 50px)
+    }
 }
 /* selesai lima-sehat */
