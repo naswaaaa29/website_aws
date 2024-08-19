@@ -12,7 +12,9 @@
 body{
     width: 100%;
     height: 100%;
-    background-color: #E0FBE2;
+    background-color: #006797d2;
+    color: white;
+    font-family: 'Poppins', sans-serif;
     background-size:cover;
 }
 .top{
@@ -111,6 +113,122 @@ header .navigation .navigation-items a:hover:before {
     display: block;
 }
 
+.header {
+    text-align: center;
+    margin: auto;
+    max-width: 40vh;
+    padding-block: 24px;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    border-bottom: 2px dashed var(--primary);
+    color: var(--primary);
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
 section {
-    padding: 100px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.team {
+    width: 240px;
+    height: 360px;
+    overflow: hidden;
+    margin: 10px;
+    border: 2px solid var(--primary);
+    border-radius: 16px;
+    position: relative;
+    background-color: #ffffff34;
+}
+
+.team::before {
+    content: '';
+    background-image: var(--img);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    filter: blur(4px) grayscale(100%);
+}
+
+.team img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 360px;
+    border-radius: 16px;
+    z-index: 3;
+    object-fit: cover;
+    border: none;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.team:hover img {
+    width: 120px;
+    height: 180px;
+    border: 2px solid var(--primary);
+    left: 60px;
+    top: 45px;
+}
+
+.team .data {
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: #363636;
+    padding: 12px;
+    border-top: 6px solid var(--primary);
+    border-radius: 50% 50% 0px 0px;
+    padding-top: 60px;
+    text-align: center;
+    transform: scale(2);
+    transition: all 0.2s ease-out;
+}
+
+.team .nama {
+    font-size: 18px;
+    padding: 12px;
+    margin-bottom: -10px;
+    text-transform: capitalize;
+}
+
+.team .title {
+    color: grey;
+    text-transform: capitalize;
+}
+
+.team:hover .data {
+    transform: scale(1);
+}
+
+.team .sosmed {
+    padding-block: 12px;
+    font-size: 18px;
+}
+
+.team .sosmed i {
+    display: inline-block;
+    width: 36px;
+    padding: 8px;
+    background-color: #ededed;
+    border-radius: 16px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.team .sosmed i:hover {
+    color: var(--birdong);
+    background-color: #363636;
 }
