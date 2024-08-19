@@ -171,40 +171,6 @@ section {
     font-style: italic;
 }
 
-/************heading 1**************/
-.heading1{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top:65px;
-    align-items:center;
-    margin-top: -50px;
-    background-image: url(../img/bg_gizi.png);
-}
-.right1{
-    width: 440px;
-    height: 440px;
-    margin-top: -50px;
-    background-image: url('../img/gizi1.png');
-    background-size: cover;
-    border-radius: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: zoomIn 5s infinite;
-}
-
-@keyframes zoomIn {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
 /* responsive */
 @media (max-width: 768px) {
     .heading {
@@ -272,18 +238,22 @@ section {
 
 /* astronomi */
 .astronomi {
-    /* background: #E2BFB3; */
-    padding: 2rem 2%;
+    padding: 5.5rem 4% 2rem;
+    margin: 0;
+    margin-top: 10px;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-image: url(../img/img_sehatbergizi/bgfull_gizi.png);
 }
-
 .astronomi h2 {
+    z-index: 1;
+    position: relative;
+    padding: 1rem;
     color: var(--birdong);
-    font-size: 2.3rem;
-    margin-top: -50px;
-    padding: 2rem 0 1rem 0;
+    font-size: 3rem;
     text-align: center;
+    margin-top: -90px;
     margin-bottom: 3rem;
     animation: fadeIn 1s ease-in-out;
 }
@@ -684,6 +654,7 @@ section {
     position: relative;
     color: var(--birdong);
     font-size: 3rem;
+    margin-top: 100px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .4rem;

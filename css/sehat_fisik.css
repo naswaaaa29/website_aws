@@ -236,19 +236,27 @@ section {
 
 /* astronomi */
 .astronomi {
-    background: #DFCCFB;
-    padding: 3rem 10%;
+    padding: 6rem 5% 2rem;
+    margin: 0;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/img_sehatfisik/bgfull_sehatfisik.png);
 }
 
 .astronomi h2 {
+    z-index: 1;
+    position: relative;
+    padding: 1rem;
     color: var(--birdong);
-    font-size: 2.3rem;
-    margin-top: -100px;
-    padding: 2rem 0 1rem 0;
+    font-size: 3rem;
     text-align: center;
+    margin-top: -100px;
     margin-bottom: 3rem;
     animation: fadeIn 1s ease-in-out;
 }
+
 .astronomi-card1, .astronomi-card2 {
     display: flex;
     align-items: center;
@@ -260,11 +268,11 @@ section {
 
 .card {
     padding: 1rem;
+    margin-top: -20px;
     border: 2px solid var(--orenterang);
     text-align: center;
     border-radius: 25px;
     display: block;
-    transition: all .4s ease;
     z-index: 999;
     flex: 1 1 calc(25% - 1rem); /* Mengatur lebar card agar sesuai dengan ukuran layar */
     box-sizing: border-box;
@@ -646,6 +654,7 @@ section {
     position: relative;
     color: var(--birdong);
     font-size: 3rem;
+    margin-top: 100px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .4rem;

@@ -234,13 +234,18 @@ section {
 
 /* astronomi */
 .astronomi {
-    background: #FDFDBD;
-    padding: 3rem 10%;
-}
+    padding: 6rem 5% 2rem;
+    margin: 0;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/img_sehatjiwa/bgfull_jiwa.png);
 
+}
 .astronomi h2 {
     color: var(--birdong);
-    font-size: 2.3rem;
+    font-size: 3rem;
     margin-top: -100px;
     padding: 2rem 0 1rem 0;
     text-align: center;
@@ -644,6 +649,7 @@ section {
     position: relative;
     color: var(--birdong);
     font-size: 3rem;
+    margin-top: 100px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .4rem;
