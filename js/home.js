@@ -22,7 +22,7 @@ function updateBottomPosition() {
 
     // Menyesuaikan posisi bottom berdasarkan tinggi layar juga
     bottomPx = (bottomPercentage / 100) * tinggiLayar-100;
-    console.log(bottomPx);
+  
     // Mengatur properti CSS bottom dari elemen yang diinginkan
     moon.style.bottom = bottomPx + 'px';
 }
@@ -39,16 +39,15 @@ window.addEventListener('resize', updateBottomPosition);
 window.addEventListener("scroll", () => {
     let value = window.scrollY;
     let tinggiLayarhand = window.innerHeight * (bottomPx / window.innerHeight);
-    console.log("layar:"+tinggiLayarhand);
-    console.log("moon : "+ moon.style.bottom);
+   
     
     let handbot = value * -0.7;
 
-    console.log(handbot);
+   
     
     moon.style.bottom = tinggiLayarhand + value * -0.7 + "px";
     hand.style.bottom = handbot + "px";
-    console.log("hand : "+hand.style.bottom);
+
     
     text.style.marginTop = value * 1 + 'px';
     p2.style.left = value * -1.5 + 'px';

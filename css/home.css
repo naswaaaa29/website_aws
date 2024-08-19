@@ -468,23 +468,7 @@ section {
 .carousel.next .item:nth-child(1){
     animation: transformFromPosition2 0.5s ease-in-out 1 forwards;
 }
-@media (max-width: 768px) {
-    #hand {
-        width: 100vw; 
-    }
-    #moon{
-        bottom: 30%;
-    }
-}
 
-@media (max-width: 480px) {
-    #hand {
-        width: 100vw; 
-    }
-    #moon{
-        bottom: 50%;
-    }
-}
 
 @keyframes transformFromPosition2{
     from{
@@ -663,6 +647,23 @@ section {
     
     .carousel .list .item img{
         width: 40%;
+        left : 50%;
+    }
+    #hand {
+        width: 100vw; 
+    }
+    #moon{
+        bottom: 30%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #hand {
+        width: 100vw; 
+    }
+    #moon{
+        bottom: 50%;
     }
 }
 /* selesai lima-sehat */
