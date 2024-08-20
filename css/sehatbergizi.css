@@ -24,55 +24,9 @@ body{
     overflow-x: hidden; 
 }
 
-header {
-    padding: 15px 10%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    z-index: 1001;
-} 
 
-.logo {
-    font-size: 2rem;
-    color: #12f7ff;
-    text-decoration: none;
-    font-weight: 600;
-}
 
-ul.navlist {
-    display: flex;
-    align-items: center;
-}
 
-.navlist li {
-    margin-left: 1rem;
-}
-
-.navlist li a {
-    color: #8D493A;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    padding: 5px 12px;
-    border: 2px solid #A2CA71;
-    border-radius: 25px;
-    transition: all .3s ease;
-}
-
-.navlist li a:hover,
-.navlist li a.active {
-    box-shadow: 0 0 1rem var(--hijautua);
-    background: #A2CA71;
-    color: #fff;
-}
-
-section {
-    min-height: 100vh;
-} 
 /* selesai header */
 
 /************heading**************/
@@ -83,7 +37,6 @@ section {
     align-items:center;
     background-repeat: no-repeat;
     background-size: 100%;
-    margin-top: 80px;
     background-image: url('../img/bg_5s/1.png');
 }
 

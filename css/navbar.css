@@ -4,10 +4,52 @@
     margin:0;
 }
 :root{
-    --birdong: #2A1A5E;
-    --orenterang: #F45905;
-    --orenpastel: #FB9224;
-    --kuning: #FBE555;
+    /* color */
+    --hijautua: #1A5319;
+    --hijausedang: #508D4E;
+    --hijaumuda: #80AF81;
+
+    --item1-transform: translateX(-100%) translateY(-5%) scale(1.5);
+    --item1-filter: blur(30px);
+    --item1-zIndex: 11;
+    --item1-opacity: 0;
+
+    --item2-transform: translateX(0);
+    --item2-filter: blur(0px);
+    --item2-zIndex: 10;
+    --item2-opacity: 1;
+
+    --item3-transform: translate(50%,10%) scale(0.8);
+    --item3-filter: blur(10px);
+    --item3-zIndex: 9;
+    --item3-opacity: 1;
+
+    --item4-transform: translate(90%,20%) scale(0.5);
+    --item4-filter: blur(30px);
+    --item4-zIndex: 8;
+    --item4-opacity: 1;
+    
+    --item5-transform: translate(120%,30%) scale(0.3);
+    --item5-filter: blur(40px);
+    --item5-zIndex: 7;
+    --item5-opacity: 0;
+}
+
+::-webkit-scrollbar {
+    height: .1rem;
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--hijaumuda);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--hijautua);
+    border-radius: 5rem;
+}
+.container-fluid{
+    --bs-gutter-x: 0;
 }
 .logo {
     font-size: 2rem;
