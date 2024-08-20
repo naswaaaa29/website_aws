@@ -40,7 +40,7 @@ ocfe.addEventListener('click', () => {
     // Update content for img2
     updateContent(
         'Bagaimana Cara Mendapatkan Imunisasi??',
-        'Imunisasi bisa didapatkan di berbagai fasilitas kesehatan seperti:Puskesmas, Rumah Sakit, Klinik Kesehatan, dan Program Imunisasi Nasional.'
+        'Imunisasi bisa didapatkan di berbagai fasilitas kesehatan seperti: Puskesmas, Rumah Sakit, Klinik Kesehatan, dan Program Imunisasi Nasional.'
     );
 });
 

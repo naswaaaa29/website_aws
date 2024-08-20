@@ -39,8 +39,8 @@ ocfe.addEventListener('click', () => {
 
     // Update content for img2
     updateContent(
-        'Apa Saja Sih Prinsip Sehat Lingkungan??',
-        'Menghindari junk food penting untuk menjaga kesehatan tubuh karena makanan ini biasanya tinggi kalori, gula, garam, dan lemak jenuh, namun rendah nutrisi. Konsumsi junk food secara berlebihan dapat menyebabkan berbagai masalah kesehatan, seperti obesitas, diabetes, penyakit jantung, dan masalah pencernaan.'
+        'Apa Peran Masyarakat dalam Menjaga Kesehatan Lingkungan?',
+        'Masyarakat dapat berperan dalam menjaga kesehatan lingkungan dengan mengadopsi kebiasaan ramah lingkungan, seperti mengurangi sampah, mendukung produk ramah lingkungan, dan terlibat dalam kegiatan komunitas terkait lingkungan. Kesadaran dan tindakan sehari-hari setiap orang berkontribusi pada kesehatan lingkungan secara keseluruhan.'
     );
 });
 
