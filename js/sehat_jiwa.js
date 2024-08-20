@@ -25,7 +25,7 @@ gcfe.addEventListener('click', () => {
     // Update content for img1
     updateContent(
         'Apa Itu Kesehatan Mental?',
-        'Gizi seimbang adalah kunci untuk menjaga kesehatan tubuh dan pikiran. Dengan mengonsumsi makanan yang tepat, tubuh Anda mendapatkan semua nutrisi yang dibutuhkan untuk berfungsi dengan optimal. Gizi seimbang membantu: Meningkatkan Sistem Kekebalan Tubuh, Menjaga Berat Badan Ideal, dan Meningkatkan Energi.'
+        'Kesehatan mental adalah kondisi kesejahteraan emosional, psikologis, dan sosial yang memengaruhi bagaimana seseorang berpikir, merasa, dan bertindak. Kesehatan mental yang baik memungkinkan individu untuk menghadapi stres, membangun hubungan yang sehat, dan membuat keputusan yang bijaksana. Ini juga mempengaruhi kualitas hidup dan kesejahteraan secara keseluruhan.'
     );
 });
 
@@ -39,8 +39,8 @@ ocfe.addEventListener('click', () => {
 
     // Update content for img2
     updateContent(
-        'Apa Saja Sih Prinsip Sehat Lingkungan??',
-        'Menghindari junk food penting untuk menjaga kesehatan tubuh karena makanan ini biasanya tinggi kalori, gula, garam, dan lemak jenuh, namun rendah nutrisi. Konsumsi junk food secara berlebihan dapat menyebabkan berbagai masalah kesehatan, seperti obesitas, diabetes, penyakit jantung, dan masalah pencernaan.'
+        'Apa yang Harus Dilakukan Jika Merasa Kesepian?',
+        'Jika merasa kesepian, cobalah untuk terhubung dengan orang lain, seperti teman atau keluarga, atau bergabung dengan kelompok atau komunitas yang memiliki minat yang sama. Berbicara dengan seorang profesional seperti psikolog atau konselor juga dapat membantu mengatasi perasaan kesepian.'
     );
 });
 
@@ -54,7 +54,7 @@ pcfe.addEventListener('click', () => {
 
     // Update content for img3
     updateContent(
-        'Ayo Mulai Sekarang!',
-        'Lingkungan yang sehat dimulai dari tindakan sederhana yang dilakukan setiap hari. Mari bersama-sama menjaga dan melestarikan lingkungan demi masa depan yang lebih baik untuk kita semua.'
+        'Bagaimana Cara Mendapatkan Bantuan Profesional untuk Kesehatan Mental?',
+        'Untuk mendapatkan bantuan profesional, Anda dapat menghubungi psikolog, psikiater, atau konselor yang memiliki kualifikasi dan lisensi. Anda juga dapat mencari referensi dari dokter umum atau menggunakan layanan kesehatan mental online untuk konsultasi awal.'
     );
 });
