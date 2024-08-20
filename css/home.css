@@ -90,7 +90,10 @@ ul.navlist {
 li {
     margin-left: 1rem;
 }
-
+nav{
+    position: fixed;
+    z-index: 1002;
+}
 li a {
     color: #8D493A;
     text-decoration: none;
@@ -730,7 +733,9 @@ section div img{
         font-size: 40px;
         font-weight: bold;
     }
-  
+    nav{
+        background-color: white;
+    }
 }
 
 @media screen and (max-width: 767px){
