@@ -87,11 +87,11 @@ ul.navlist {
     align-items: center;
 }
 
-.navlist li {
+li {
     margin-left: 1rem;
 }
 
-.navlist li a {
+li a {
     color: #8D493A;
     text-decoration: none;
     font-weight: 500;
@@ -100,13 +100,17 @@ ul.navlist {
     border: 2px solid #A2CA71;
     border-radius: 25px;
     transition: all .3s ease;
+    text-align: center;
 }
 
-.navlist li a:hover,
-.navlist li a.active {
+li a:hover,
+li a.active {
     box-shadow: 0 0 1rem var(--hijautua);
     background: #A2CA71;
     color: #fff;
+}
+nav ul {
+    right: 0;
 }
 
 
