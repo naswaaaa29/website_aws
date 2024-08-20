@@ -87,27 +87,32 @@ ul.navlist {
     align-items: center;
 }
 
-li {
+nav li {
     margin-left: 1rem;
 }
 nav{
     position: fixed;
     z-index: 1002;
 }
-li a {
-    color: #8D493A;
+
+nav li a {
+    
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
     padding: 5px 12px;
     border: 2px solid #A2CA71;
-    border-radius: 25px;
+    border-radius: 15px;
     transition: all .3s ease;
     text-align: center;
 }
+.nav-link{
+    border: 2px solid #A2CA71;
+    color: #8D493A;
+}
 
-li a:hover,
-li a.active {
+.nav-link:hover,
+.nav-link.active {
     box-shadow: 0 0 1rem var(--hijautua);
     background: #A2CA71;
     color: #fff;
@@ -784,14 +789,14 @@ section div img{
         bottom: 30%;
     }
     .content .text-box h3 {
-        font-size: 0.7em;
-        margin-bottom: 5px;
+        font-size: 1.5em;
+        margin-bottom: 10px;
     }
     .content .text-box p{
-        font-size: 0.5em;
+        font-size: 1em;
     }
     .content .text-box{
-        transform: translate(-90px, 30px)
+        transform: translate(-30px, 30px)
     }
     .img1,.img3{
         left: 0%;
@@ -803,9 +808,14 @@ section div img{
         scale: 0.6;
     }
     .about h2 {
-        font-size: 30px;
+        font-size: 50px;
         font-weight: bold;
+        padding-top: 50%;
     }
+    .content{
+       margin-top: 10%;
+    }
+    
 }
 
 

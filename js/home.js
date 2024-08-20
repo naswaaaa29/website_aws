@@ -3,6 +3,7 @@ let hand = document.getElementById("hand");
 let text = document.getElementById("text");
 let p2 = document.getElementById('p2');
 let p3 = document.getElementById('p3');
+var bgabout = document.getElementById('bg-about');
 var bottomPx;
 
 function updateBottomPosition() {
@@ -10,6 +11,12 @@ function updateBottomPosition() {
     var tinggiLayar = window.innerHeight;
     var bottomPercentage;
 
+    if(lebarLayar <= 768){
+        bgabout.setAttribute('src','../img/About-Images/bg2.png');
+    }
+    if(lebarLayar >= 768){
+        bgabout.setAttribute('../img/About-Images/bg-about.png');
+    }
     // Jika lebar layar >= 1000px, bottom 10%
     if (lebarLayar <= 500) {
         bottomPercentage = 50; // Jika lebar layar <= 500px, bottom 50%
