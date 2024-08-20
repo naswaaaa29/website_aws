@@ -15,7 +15,7 @@ function updateBottomPosition() {
         bgabout.setAttribute('src','../img/About-Images/bg2.png');
     }
     if(lebarLayar >= 768){
-        bgabout.setAttribute('../img/About-Images/bg-about.png');
+        bgabout.setAttribute('src','../img/About-Images/bg-about.png');
     }
     // Jika lebar layar >= 1000px, bottom 10%
     if (lebarLayar <= 500) {
