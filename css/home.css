@@ -138,7 +138,7 @@ ul.navlist {
 
 .parallax-home #text {
     position: absolute;
-    
+    top: 220px;
     font-size: 4em;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
@@ -151,6 +151,7 @@ ul.navlist {
 
 .parallax-home img#moon {
     width: 90%;
+    top: -20px;
    
 }
 
@@ -183,22 +184,22 @@ section div img{
  width: 250px;   
 }
 .img-1 {
-    left: 5%; 
-    bottom:50%;
+    left: 10%; 
+    bottom:40%;
     background-size: cover;
 }
 
 .img-2 {
-    bottom: 23%;
+    bottom: 30%;
    
     scale: 0.7;
-    left: 22%;
+    left: 20%;
     background-size: cover;
 }
 
 .img-3 {
-    bottom: 25%;
-    right: 22%;
+    bottom: 28%;
+    right: 18%;
     /* 
     width: 350px; */
    
@@ -209,8 +210,8 @@ section div img{
 
 .img-4 {
 
-    right: 3%;
-   bottom: 30%;
+    right: 8%;
+    bottom: 38%;
     background-size: cover;
 }
 
