@@ -12,6 +12,9 @@
     --orenterang: #F45905;
     --orenpastel: #FB9224;
     --kuning: #FBE555;
+    --hijautua: #1A5319;
+    --hijausedang: #508D4E;
+    --hijaumuda: #80AF81;
 }
 
 body{
@@ -252,10 +255,10 @@ section {
 .slide .image .box-section{
     position: absolute;
     background: #007146;
-    width: 900px;
-    height: 1082px;
+    width: 800px;
+    height: 1000px;
     right: -450px;
-    top: 96%;
+    top: 102%;
     border-radius: 100%;
     /* pointer-events: none; */
     transition:0.3s ease-in;
@@ -309,7 +312,7 @@ section {
     height: 10vh;
     position: absolute;
     top: 172%;
-    margin: 0 40%;
+    margin: 0 50%;
     display: flex;
     justify-content: space-between;
     z-index: 2; /* Tambahkan z-index agar berada di atas elemen lain */
@@ -494,7 +497,7 @@ section {
 }
 
 .subjects .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     margin-top: 30px; /* Mengurangi jarak margin atas dari kontainer */
     padding: 0 1rem;

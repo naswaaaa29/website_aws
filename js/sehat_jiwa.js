@@ -24,7 +24,7 @@ gcfe.addEventListener('click', () => {
 
     // Update content for img1
     updateContent(
-        'Mengapa Kesehatan Lingkungan Itu Penting?',
+        'Apa Itu Kesehatan Mental?',
         'Gizi seimbang adalah kunci untuk menjaga kesehatan tubuh dan pikiran. Dengan mengonsumsi makanan yang tepat, tubuh Anda mendapatkan semua nutrisi yang dibutuhkan untuk berfungsi dengan optimal. Gizi seimbang membantu: Meningkatkan Sistem Kekebalan Tubuh, Menjaga Berat Badan Ideal, dan Meningkatkan Energi.'
     );
 });

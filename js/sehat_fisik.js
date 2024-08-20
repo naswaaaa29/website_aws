@@ -55,6 +55,6 @@ pcfe.addEventListener('click', () => {
     // Update content for img3
     updateContent(
         'Ayo Mulai Sekarang!',
-        'Lingkungan yang sehat dimulai dari tindakan sederhana yang dilakukan setiap hari. Mari bersama-sama menjaga dan melestarikan lingkungan demi masa depan yang lebih baik untuk kita semua.'
+        'Pola makan yang bergizi melibatkan konsumsi berbagai makanan yang kaya akan vitamin, mineral, protein, karbohidrat, lemak sehat, dan serat. Makanan bergizi membantu meningkatkan sistem kekebalan tubuh, mendukung fungsi otak, menjaga berat badan ideal, dan mencegah penyakit kronis seperti diabetes dan penyakit jantung.'
     );
 });
