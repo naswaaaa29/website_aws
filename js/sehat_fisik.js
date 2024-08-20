@@ -24,7 +24,7 @@ gcfe.addEventListener('click', () => {
 
     // Update content for img1
     updateContent(
-        'Mengapa Gizi Seimbang Itu Penting?',
+        'Mengapa Kesehatan Lingkungan Itu Penting?',
         'Gizi seimbang adalah kunci untuk menjaga kesehatan tubuh dan pikiran. Dengan mengonsumsi makanan yang tepat, tubuh Anda mendapatkan semua nutrisi yang dibutuhkan untuk berfungsi dengan optimal. Gizi seimbang membantu: Meningkatkan Sistem Kekebalan Tubuh, Menjaga Berat Badan Ideal, dan Meningkatkan Energi.'
     );
 });
@@ -39,7 +39,7 @@ ocfe.addEventListener('click', () => {
 
     // Update content for img2
     updateContent(
-        'Hindari Junkfood!!',
+        'Apa Saja Sih Prinsip Sehat Lingkungan??',
         'Menghindari junk food penting untuk menjaga kesehatan tubuh karena makanan ini biasanya tinggi kalori, gula, garam, dan lemak jenuh, namun rendah nutrisi. Konsumsi junk food secara berlebihan dapat menyebabkan berbagai masalah kesehatan, seperti obesitas, diabetes, penyakit jantung, dan masalah pencernaan.'
     );
 });
@@ -54,7 +54,7 @@ pcfe.addEventListener('click', () => {
 
     // Update content for img3
     updateContent(
-        'Tetap Sehat dengan Pola Makan Bergizi!',
+        'Ayo Mulai Sekarang!',
         'Pola makan yang bergizi melibatkan konsumsi berbagai makanan yang kaya akan vitamin, mineral, protein, karbohidrat, lemak sehat, dan serat. Makanan bergizi membantu meningkatkan sistem kekebalan tubuh, mendukung fungsi otak, menjaga berat badan ideal, dan mencegah penyakit kronis seperti diabetes dan penyakit jantung.'
     );
 });
