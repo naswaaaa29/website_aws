@@ -109,9 +109,7 @@ ul.navlist {
     color: #fff;
 }
 
-section {
-    min-height: 100vh;
-} 
+
 /* selesai header */
 
 /* mulai home */
@@ -181,41 +179,41 @@ section {
     animation: float 10s ease-in-out infinite;
 }
 
+section div img{
+ width: 250px;   
+}
 .img-1 {
-    bottom: 20%;
-    left: -12%;
-    width: 500px;
-    height: 60vh;
-    background-image: url('../img/Home-images/1.png'); 
+    left: 5%; 
+    bottom:50%;
     background-size: cover;
 }
 
 .img-2 {
-    bottom: 12%;
-    left: 12%;
-    width: 400px;
-    height: 45vh;
-    background-image: url('../img/Home-images/2.png'); 
+    bottom: 23%;
+   
+    scale: 0.7;
+    left: 22%;
     background-size: cover;
 }
 
 .img-3 {
-    bottom: 14%;
+    bottom: 25%;
     right: 22%;
-    width: 350px;
-    height: 300px;
-    background-image: url('../img/Home-images/3.png'); 
+    /* 
+    width: 350px; */
+   
+    scale: 0.7;
+    
     background-size: cover;
 }
 
 .img-4 {
-    bottom: 15%;
-    right: 7%;
-    width: 450px;
-    height: 400px;
-    background-image: url('../img/Home-images/4.png'); 
+
+    right: 3%;
+   bottom: 30%;
     background-size: cover;
 }
+
 
 /* Animasi melayang */
 @keyframes float {
@@ -307,14 +305,12 @@ section {
 }
 
 .about h2 {
-    margin-top: 50px;
     font-size: 50px;
     font-weight: bold;
-    margin-left: 450px;
 }
 
 .about img {
-    position: absolute;
+    /* position: absolute; */
     z-index: 2;
     object-fit: cover;
     pointer-events: none;
@@ -327,41 +323,37 @@ section {
 }
 
 .about img#image1 {
-    top: 50px;
-    width: 85vh;
-    margin-left: 40px;
+    width: 40vw;
+    height: 40vh;
     height: auto;
     border-radius: 10px;
 }
 
 .about .info-box {
     position: absolute;
-    left: 10%;
-    z-index: 3;
-    margin-left: 100px;
+    z-index: 3; 
 }
 
 .content {
     position: relative;
-    width: 1200px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    z-index: 10;
 }
 
 .content .image {
-    position: relative;
-    width: 800px;
-    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
 
 .content .text-box {
-    text-align: justify;
+    text-align: start;
     color: #A2CA71;
     z-index: 4;
     background: rgba(0, 0, 0, 0.568);
     /* filter: blur(0.2); */
-    padding: 25px;
+    padding: 15px;
     max-width: 450px;
     border: 1px solid rgba(240, 237, 237, 0.1);
     border-radius: 10px;
@@ -742,37 +734,42 @@ section {
         width: 90%;
     }
     .img-1 {
-        bottom: 0%;
-        left: -12%;
-        width: 500px;
-        height: 60vh;
-        
+      scale: 0.7;
+      left: -5%;
+      bottom: 60%;
     }
     
     .img-2 {
-        bottom: 2%;
-        left: 12%;
-        width: 400px;
-        height: 45vh;
+      scale: 0.5;
       
     }
     
     .img-3 {
-        bottom: 2%;
-        right: 22%;
-        width: 350px;
-        height: 300px;
-       
+        scale: 0.5;
     }
     
     .img-4 {
-        bottom: 0%;
-        right: 7%;
-        width: 450px;
-        height: 400px;
+       scale: 0.7;
         
     }
-    
+    .content .text-box h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    .content .text-box p{
+        font-size: 0.7em;
+    }
+    .content .text-box{
+        transform: translate(-150px, 140px)
+    }
+    .img1,.img2,.img3,.img4{
+        scale: 0.7;
+    }
+    .about h2 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+  
 }
 
 @media screen and (max-width: 767px){
@@ -793,36 +790,23 @@ section {
     }
    
     .img-1 {
-        bottom: 0%;
-        left: -30%;
-        width: 500px;
-        height: 60vh;
+        scale: 0.6;
         
-    }
-    
-    .img-2 {
-        bottom: 2%;
-        left: 0%;
-        width: 400px;
-        height: 45vh;
+      }
       
-    }
-    
-    .img-3 {
-        bottom: 2%;
-        right: 5%;
-        width: 400px;
-        height: 45vh;
-       
-    }
-    
-    .img-4 {
-        bottom: 0%;
-        right: -20%;
-        width: 500px;
-        height: 60vh;
+      .img-2 {
+        scale: 0.4;
         
-    }
+      }
+      
+      .img-3 {
+          scale: 0.4;
+      }
+      
+      .img-4 {
+         scale: 0.6;
+          
+      }
     .carousel .list .item img{
         width: 40%;
         left : 50%;
@@ -833,10 +817,33 @@ section {
     #moon{
         bottom: 30%;
     }
+    .content .text-box h3 {
+        font-size: 0.7em;
+        margin-bottom: 5px;
+    }
+    .content .text-box p{
+        font-size: 0.5em;
+    }
+    .content .text-box{
+        transform: translate(-90px, 30px)
+    }
+    .img1,.img3{
+        left: 0%;
+    }
+    .img2,.img4{
+        right: 0%;
+    }
+    .img1,.img2,.img3,.img4{
+        scale: 0.6;
+    }
+    .about h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
 }
 
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     #hand {
         width: 100vw; 
     }
@@ -844,36 +851,61 @@ section {
         bottom: 50%;
     }
     .img-1 {
-        bottom: 10%;
-        left: -45%;
-        width: 400px;
-        height: 40vh;
-        
-    }
-    
-    .img-2 {
-        bottom: 5%;
-        left: -15%;
-        width: 400px;
-        height: 30vh;
+        scale: 0.5;
+        left: -5%;
+        bottom: 60%;
+      }
       
+      .img-2 {
+        scale: 0.3;
+        
+      }
+      
+      .img-3 {
+          scale: 0.3;
+      }
+      
+      .img-4 {
+         scale: 0.5;
+         right: 10%;
+         bottom: 40%;
+          
+      }
+    .content .text-box h3 {
+        font-size: 0.6em;
+        margin-bottom: 3px;
     }
-    
-    .img-3 {
-        bottom: 2%;
-        right: -15%;
-        width: 400px;
-        height: 35vh;
-       
+    .content .text-box p{
+        font-size: 0.4em;
     }
-    
-    .img-4 {
-        bottom: 10%;
-        right: -20%;
-        width: 400px;
-        height: 45vh;
+    .content .text-box{
+        padding:10px;
+        transform: translate(-70px, 30px)
+        scale(0.7)
         
     }
+    .img1,.img2,.img3,.img4{
+        scale: 0.5;
+        
+    }
+
+    .about h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
     
+}
+@media screen and (max-width: 350px) {
+    .content .text-box h3 {
+        font-size: 0.5em;
+        margin-bottom: 3px;
+    }
+    .content .text-box p{
+        font-size: 0.4em;
+    }
+    .content .text-box{
+        padding:5px;
+        transform: translate(-50px, 50px)
+    }
 }
 /* selesai lima-sehat */
